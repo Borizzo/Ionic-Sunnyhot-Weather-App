@@ -1,0 +1,7 @@
+{
+  "name": "ionic-sunnyhot",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
