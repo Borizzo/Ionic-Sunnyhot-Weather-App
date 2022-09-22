@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { DayPipe } from '../pipes/day.pipe';
+import { DateFormattingPipe } from '../pipes/date-formatting.pipe';
+import { from } from 'rxjs';
+
 
 
 @NgModule({
@@ -14,6 +18,7 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,DayPipe, DateFormattingPipe,],
+  exports: [DateFormattingPipe,DayPipe,]
 })
 export class HomePageModule {}
